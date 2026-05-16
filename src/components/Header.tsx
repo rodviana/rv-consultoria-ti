@@ -67,7 +67,7 @@ export function Header() {
             </a>
             <a
               href={`mailto:${CONTACT.email}`}
-              className="rounded-lg bg-zinc-900 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-white"
+              className="rounded-lg bg-zinc-900 px-2.5 py-1.5 text-xs font-medium text-white transition hover:bg-zinc-800 sm:px-3 sm:text-sm dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-white"
             >
               {m.common.contact}
             </a>

@@ -15,9 +15,9 @@ import "@/app/consultoria.css";
 
 export function ConsultoriaPage() {
   return (
-    <div className="consultoria-grid min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50">
+    <div className="consultoria-grid min-h-screen overflow-x-hidden bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50">
       <ConsultoriaHeader />
-      <main className="relative mx-auto max-w-6xl px-6 pb-28">
+      <main className="safe-bottom relative mx-auto max-w-6xl px-4 pb-4 sm:px-6 md:pb-8">
         <ConsultoriaHero />
         <div className="space-y-24 md:space-y-32">
           <Pains />

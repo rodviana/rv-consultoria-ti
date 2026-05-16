@@ -9,13 +9,20 @@ type NavbarControlsProps = {
   mobileBar?: boolean;
 };
 
-const panelShell =
-  "items-stretch gap-0 rounded-xl border-2 border-emerald-500/50 bg-white p-1.5 shadow-lg shadow-emerald-500/10 ring-2 ring-emerald-500/20 dark:border-emerald-400/40 dark:bg-zinc-900 dark:shadow-emerald-900/20 dark:ring-emerald-400/25";
-
-function PreferencesPanel({ className = "" }: { className?: string }) {
+function PreferencesPanel({
+  className = "",
+  compact = false,
+}: {
+  className?: string;
+  compact?: boolean;
+}) {
   const { locale, setLocale, m } = useI18n();
   const { setTheme, resolvedTheme } = useTheme();
   const isDark = resolvedTheme === "dark";
+
+  const panelShell = compact
+    ? "flex flex-row items-stretch gap-0 rounded-xl border border-emerald-500/40 bg-white p-1 shadow-md dark:border-emerald-400/30 dark:bg-zinc-900"
+    : "flex items-stretch gap-0 rounded-xl border-2 border-emerald-500/50 bg-white p-1.5 shadow-lg shadow-emerald-500/10 ring-2 ring-emerald-500/20 dark:border-emerald-400/40 dark:bg-zinc-900 dark:shadow-emerald-900/20 dark:ring-emerald-400/25";
 
   return (
     <div
@@ -24,7 +31,9 @@ function PreferencesPanel({ className = "" }: { className?: string }) {
       aria-label={`${m.common.languageLabel} · ${m.common.themeLabel}`}
     >
       <div className="flex flex-col justify-center px-1">
-        <span className="px-1.5 text-[9px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400">
+        <span
+          className={`px-1.5 font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400 ${compact ? "sr-only" : "text-[9px]"}`}
+        >
           {m.common.languageLabel}
         </span>
         <div className="mt-1 flex rounded-lg bg-zinc-100 p-0.5 dark:bg-zinc-800">
@@ -52,7 +61,9 @@ function PreferencesPanel({ className = "" }: { className?: string }) {
       />
 
       <div className="flex flex-col justify-center px-1">
-        <span className="px-1.5 text-[9px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400">
+        <span
+          className={`px-1.5 font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400 ${compact ? "sr-only" : "text-[9px]"}`}
+        >
           {m.common.themeLabel}
         </span>
         <div className="mt-1 flex rounded-lg bg-zinc-100 p-0.5 dark:bg-zinc-800">
@@ -70,7 +81,7 @@ function PreferencesPanel({ className = "" }: { className?: string }) {
             <span className="text-sm" aria-hidden>
               ☀️
             </span>
-            <span>{m.common.lightShort}</span>
+            <span className={compact ? "sr-only" : ""}>{m.common.lightShort}</span>
           </button>
           <button
             type="button"
@@ -86,7 +97,7 @@ function PreferencesPanel({ className = "" }: { className?: string }) {
             <span className="text-sm" aria-hidden>
               🌙
             </span>
-            <span>{m.common.darkShort}</span>
+            <span className={compact ? "sr-only" : ""}>{m.common.darkShort}</span>
           </button>
         </div>
       </div>
@@ -113,5 +124,5 @@ export function NavbarControls({ mobileBar = false }: NavbarControlsProps) {
     ? "flex w-full justify-center md:hidden"
     : "hidden md:flex";
 
-  return <PreferencesPanel className={positionClass} />;
+  return <PreferencesPanel className={positionClass} compact={mobileBar} />;
 }

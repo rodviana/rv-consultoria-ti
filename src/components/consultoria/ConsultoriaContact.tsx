@@ -15,16 +15,16 @@ export function ConsultoriaContact() {
   return (
     <section
       id="contato"
-      className="scroll-mt-28 rounded-3xl bg-zinc-900 px-8 py-16 text-center dark:bg-zinc-950 md:px-12 md:py-20"
+      className="scroll-mt-24 rounded-2xl bg-zinc-900 px-5 py-12 text-center sm:scroll-mt-28 sm:rounded-3xl sm:px-8 sm:py-16 dark:bg-zinc-950 md:px-12 md:py-20"
     >
-      <h2 className="text-3xl font-bold text-white md:text-4xl">{cta.title}</h2>
+      <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">{cta.title}</h2>
       <p className="mx-auto mt-4 max-w-lg text-zinc-400">{cta.subtitle}</p>
       <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
         <a
           href={`https://wa.me/${CONTACT.whatsapp}?text=${waText}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-8 py-4 text-base font-semibold text-white transition hover:bg-emerald-400"
+          className="inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-xl bg-emerald-500 px-8 py-4 text-base font-semibold text-white transition hover:bg-emerald-400 sm:w-auto"
         >
           <span aria-hidden>💬</span>
           {cta.button}

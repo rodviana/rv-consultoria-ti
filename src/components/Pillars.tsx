@@ -17,7 +17,7 @@ export function Pillars() {
         {pillars.map((pillar, i) => (
           <article
             key={pillar.title}
-            className="card-shine group relative flex flex-col rounded-2xl border border-zinc-200 bg-white p-6 backdrop-blur transition hover:border-zinc-300 dark:border-white/[0.06] dark:bg-zinc-950/80 dark:hover:border-white/[0.12] dark:hover:bg-zinc-900/50"
+            className="card-shine group relative flex flex-col rounded-2xl border border-zinc-200 bg-white p-5 backdrop-blur transition hover:border-zinc-300 sm:p-6 dark:border-white/[0.06] dark:bg-zinc-950/80 dark:hover:border-white/[0.12] dark:hover:bg-zinc-900/50"
           >
             <span className="font-mono text-xs text-zinc-400 dark:text-zinc-600">
               0{i + 1}

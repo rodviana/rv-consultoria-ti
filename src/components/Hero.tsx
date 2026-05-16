@@ -10,8 +10,8 @@ export function Hero() {
   const p = m.portfolio;
 
   return (
-    <section className="relative flex min-h-[90vh] flex-col justify-center pt-36 pb-20 md:pt-28 lg:min-h-[85vh]">
-      <div className="grid items-center gap-12 lg:grid-cols-[1fr_minmax(280px,360px)] lg:gap-16">
+    <section className="relative flex min-h-0 flex-col justify-center pt-28 pb-12 sm:pt-32 sm:pb-16 md:min-h-[85vh] md:pt-28 md:pb-20 lg:min-h-[85vh]">
+      <div className="grid items-center gap-8 sm:gap-10 lg:grid-cols-[1fr_minmax(280px,360px)] lg:gap-16">
         <div>
           <div className="animate-fade-up">
             <Badge variant="accent">
@@ -27,11 +27,11 @@ export function Hero() {
             {p.title} · {p.roleLine}
           </p>
 
-          <h1 className="animate-fade-up-delay-1 mt-4 max-w-4xl text-5xl font-semibold leading-[1.08] tracking-tight md:text-6xl lg:text-7xl">
+          <h1 className="animate-fade-up-delay-1 mt-4 max-w-4xl text-[2rem] font-semibold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <span className="gradient-text">{CONTACT.name}</span>
           </h1>
 
-          <p className="animate-fade-up-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-xl">
+          <p className="animate-fade-up-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:mt-8 sm:text-lg md:text-xl">
             {p.tagline}
           </p>
 
@@ -39,10 +39,10 @@ export function Hero() {
             {p.subheadline}
           </p>
 
-          <div className="animate-fade-up-delay-3 mt-10 flex flex-wrap items-center gap-4">
+          <div className="animate-fade-up-delay-3 mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <a
               href={`mailto:${CONTACT.email}`}
-              className="group inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-white"
+              className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800 sm:w-auto dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-white"
             >
               {p.ctaTalk}
               <span className="transition group-hover:translate-x-0.5">→</span>
@@ -50,14 +50,14 @@ export function Hero() {
             <a
               href={CONTACT.cvPath}
               download
-              className="inline-flex items-center rounded-xl border border-zinc-300 px-6 py-3 text-sm font-medium text-zinc-700 transition hover:border-zinc-400 dark:border-white/10 dark:text-zinc-300 dark:hover:border-white/20"
+              className="inline-flex w-full items-center justify-center rounded-xl border border-zinc-300 px-6 py-3 text-sm font-medium text-zinc-700 transition hover:border-zinc-400 sm:w-auto dark:border-white/10 dark:text-zinc-300 dark:hover:border-white/20"
             >
               {p.ctaCv}
             </a>
           </div>
         </div>
 
-        <div className="animate-fade-up-delay-2 order-first lg:order-last">
+        <div className="animate-fade-up-delay-2 order-first max-w-[280px] mx-auto w-full sm:max-w-xs lg:order-last lg:mx-0 lg:max-w-none">
           <ProfilePhoto size="hero" priority />
         </div>
       </div>

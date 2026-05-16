@@ -59,9 +59,13 @@ export function ConsultoriaHeader() {
               href={`https://wa.me/5562999768895`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden rounded-lg bg-emerald-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700 sm:block"
+              className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-600 text-white transition hover:bg-emerald-700 sm:h-auto sm:w-auto sm:px-3 sm:py-2 sm:text-sm"
+              aria-label={m.common.whatsapp}
             >
-              {m.common.whatsapp}
+              <span className="sm:hidden" aria-hidden>
+                💬
+              </span>
+              <span className="hidden sm:inline">{m.common.whatsapp}</span>
             </a>
           </div>
         </div>

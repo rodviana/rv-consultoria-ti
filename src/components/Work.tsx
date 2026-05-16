@@ -19,7 +19,7 @@ export function Work() {
         {featured.map((project, i) => (
           <article
             key={project.title}
-            className={`card-shine relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-8 transition hover:border-zinc-300 dark:border-white/[0.06] dark:bg-zinc-950/80 dark:hover:border-white/[0.12] ${
+            className={`card-shine relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 sm:p-8 dark:border-white/[0.06] dark:bg-zinc-950/80 dark:hover:border-white/[0.12] ${
               i === 0 ? "md:col-span-2 md:grid md:grid-cols-2 md:gap-8 md:p-10" : ""
             }`}
           >
@@ -29,7 +29,7 @@ export function Work() {
             />
             <div>
               <p className="font-mono text-xs text-zinc-500">{project.context}</p>
-              <h3 className="mt-3 text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+              <h3 className="mt-3 text-xl font-semibold tracking-tight text-zinc-900 sm:text-2xl dark:text-zinc-100">
                 {locale === "pt" ? project.titlePt : project.title}
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-500">

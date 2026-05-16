@@ -19,7 +19,7 @@ export function Experience() {
         {experiences.map((exp) => (
           <article
             key={exp.company}
-            className="card-shine group rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-zinc-300 dark:border-white/[0.06] dark:bg-zinc-950/50 dark:hover:border-white/[0.1] md:p-8"
+            className="card-shine group rounded-2xl border border-zinc-200 bg-white p-5 transition hover:border-zinc-300 sm:p-6 dark:border-white/[0.06] dark:bg-zinc-950/50 dark:hover:border-white/[0.1] md:p-8"
           >
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>

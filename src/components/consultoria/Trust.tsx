@@ -9,7 +9,7 @@ export function Trust() {
   const { trust } = m.consultoria;
 
   return (
-    <section className="rounded-3xl border border-zinc-200 bg-white p-8 dark:border-zinc-800 dark:bg-zinc-900 md:p-12">
+    <section className="rounded-2xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900 sm:rounded-3xl sm:p-8 md:p-12">
       <div className="grid items-center gap-10 lg:grid-cols-[200px_1fr]">
         <div className="relative mx-auto h-48 w-48 overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-700 lg:mx-0">
           <Image
