@@ -18,220 +18,220 @@ export const en: Messages = {
     brand: "RV IT Consulting",
     hero: {
       badge: "Digital transformation consulting",
-      title: "I digitize your business so you sell more and work less.",
+      title: "Run a tighter operation. Sell more. Waste less time.",
       subtitle:
-        "I help companies organize customers, automate routines, and make data-driven decisions — no jargon, no complexity, focused on what matters: your day-to-day.",
-      ctaPrimary: "I want to talk about my business",
-      ctaSecondary: "See how it works",
-      specialty: "CRM & customer relationship",
+        "I help businesses get customers, workflows, and data in one place — so decisions are easier and your team isn't buried in spreadsheets and scattered chats.",
+      ctaPrimary: "Talk about my business",
+      ctaSecondary: "How it works",
+      specialty: "CRM & customer relationships",
       whatsappIntro:
-        "Hi Rodrigo! I'd like to talk about digitizing my business.",
+        "Hi Rodrigo — I'd like to explore digitizing my business with you.",
     },
     painsSection: {
       label: "Sound familiar?",
-      title: "If your business day looks like this, we can help.",
+      title: "If this is what your week looks like, we should talk.",
     },
     pains: [
       {
-        title: "Scattered customers",
+        title: "Customer data everywhere",
         description:
-          "Spreadsheets, notebooks, WhatsApp, and memory. When it matters, nobody knows the full history of who bought what.",
+          "Spreadsheets, notebooks, WhatsApp threads, and memory. When it counts, no one has the full picture of who bought what — or when.",
       },
       {
-        title: "Missed opportunities",
+        title: "Deals slipping through",
         description:
-          "No follow-up reminders, forgotten quotes, or customers who go quiet — and the sale slips away.",
+          "Follow-ups forgotten, quotes left hanging, customers going quiet — and revenue walking out the door.",
       },
       {
-        title: "Time lost on operations",
+        title: "Stuck in busywork",
         description:
-          "Hours repeating the same tasks: copying data, building reports, answering the same questions again.",
+          "Hours lost copying data, rebuilding reports, and answering the same questions your systems should handle.",
       },
       {
-        title: "Decisions in the dark",
+        title: "Flying blind",
         description:
-          "Hard to know clearly who buys most, what sells best, or where the team is stuck.",
+          "Hard to see who your best customers are, what's actually selling, or where the team is bottlenecked.",
       },
     ],
     solutionsSection: {
       label: "What I do",
-      title: "Technology at the service of your business — not the other way around.",
+      title: "Technology that serves the business — not the other way around.",
       description:
-        "Practical solutions to organize, sell, and grow with more peace of mind.",
+        "Practical systems to get organized, close more, and grow without the chaos.",
     },
     solutions: [
       {
-        title: "Business organization",
+        title: "Operations mapped & digitized",
         description:
-          "I map how your company works today and design a simple path to digitize processes without stopping operations.",
+          "I learn how you work today and design a straightforward path to digitize — without shutting down the business.",
         icon: "map",
         featured: false,
       },
       {
-        title: "Custom CRM",
+        title: "CRM built for how you sell",
         description:
-          "A system to centralize customers, history, sales, and follow-up — the way your team actually works.",
+          "One place for customers, history, pipeline, and follow-up — shaped around your team, not a generic template.",
         icon: "users",
         featured: true,
       },
       {
-        title: "Smart automation",
+        title: "Automation that pays off",
         description:
-          "Repetitive tasks become automated flows: reminders, status updates, notifications, and integrations that save hours every week.",
+          "Reminders, status updates, notifications, and integrations that give your team hours back every week.",
         icon: "zap",
         featured: false,
       },
       {
-        title: "Clear business view",
+        title: "A clear view of the business",
         description:
-          "Dashboards and reports any manager understands — decisions based on facts, not guesswork.",
+          "Dashboards and reports managers actually use — decisions backed by numbers, not gut feel.",
         icon: "chart",
         featured: false,
       },
     ],
-    featuredBadge: "Highlight",
+    featuredBadge: "Core offering",
     crm: {
-      label: "Core strength",
-      title: "Customer relationship management that works in practice",
+      label: "Where I go deepest",
+      title: "CRM that people actually use",
       subtitle:
-        "The consulting focus: a CRM built for your business — not a generic system nobody uses.",
+        "The heart of the work: relationship management designed for your business — not shelfware nobody opens.",
       benefits: [
         {
-          title: "All customers in one place",
+          title: "Every customer in one place",
           description:
-            "Name, contact, purchase history, conversations, and notes — accessible to whoever needs to serve well.",
+            "Contact details, purchase history, conversations, and notes — available to whoever needs to deliver a great experience.",
         },
         {
-          title: "Visual sales pipeline",
+          title: "Pipeline you can see",
           description:
-            "Know each opportunity's stage: first contact, proposal, negotiation, won, or lost.",
+            "Track every opportunity: first touch, proposal, negotiation, won, or lost — at a glance.",
         },
         {
-          title: "Reminders & automatic follow-up",
+          title: "Follow-up on autopilot",
           description:
-            "The system alerts when to follow up, when a customer has been idle, or when a commitment is due.",
+            "Alerts when it's time to reach out, when a customer has gone quiet, or when a commitment is due.",
         },
         {
-          title: "History that builds trust",
+          title: "Context that builds trust",
           description:
-            "Anyone on the team serves with context — the customer feels your company truly remembers them.",
+            "Anyone on the team picks up where the last conversation left off — customers feel remembered, not forgotten.",
         },
         {
-          title: "Reports you understand",
+          title: "Reports that make sense",
           description:
-            "Top buyers, best sellers, conversion rate, and forecast — no manual spreadsheets.",
+            "Top accounts, best sellers, conversion, and forecast — without rebuilding spreadsheets every Monday.",
         },
         {
-          title: "Integration with what you already use",
+          title: "Plays nice with your stack",
           description:
-            "WhatsApp, email, spreadsheets, or existing systems — connected in an organized way.",
+            "WhatsApp, email, spreadsheets, legacy tools — wired together so data stops living in silos.",
         },
       ],
-      highlight: "Imagine opening your computer and knowing",
-      highlightStrong: "exactly who needs attention today",
+      highlight: "Picture opening your laptop and knowing",
+      highlightStrong: "exactly who needs you today",
       highlightEnd:
-        ", what was sold this week, and who is still waiting for a reply — all in one place.",
+        ", what closed this week, and who's still waiting on a reply — all in one place.",
     },
     process: {
       label: "Process",
-      title: "How it works",
-      subtitle: "A clear process, no surprises, and no leaving you lost along the way.",
+      title: "How we work together",
+      subtitle: "Straightforward steps, clear expectations, and support at every stage.",
       steps: [
         {
           step: "01",
-          title: "Free conversation",
+          title: "Intro call",
           description:
-            "I understand your business, challenges, and what you want to improve — in plain language.",
+            "We talk through your business, pain points, and what you want to improve — no tech lecture required.",
         },
         {
           step: "02",
-          title: "Diagnosis",
+          title: "Assessment",
           description:
-            "I show where time and money are lost today and what can be solved first.",
+            "I pinpoint where time and money leak today and what to tackle first for the fastest relief.",
         },
         {
           step: "03",
-          title: "Tailored proposal",
+          title: "Proposal",
           description:
-            "Transparent scope, timeline, and investment. You decide calmly, no pressure.",
+            "Clear scope, timeline, and investment. You decide on your timeline — zero hard sell.",
         },
         {
           step: "04",
-          title: "Implementation",
+          title: "Build & rollout",
           description:
-            "I build, configure, and support adoption with your team — with hands-on training.",
+            "I implement, configure, and train your team so adoption sticks — not just a handoff.",
         },
         {
           step: "05",
-          title: "Ongoing support",
+          title: "Ongoing partnership",
           description:
-            "Adjustments and improvements as the business grows. You're not alone after delivery.",
+            "Refinements and new capabilities as you grow. You're not on your own after go-live.",
         },
       ],
     },
     trust: {
       label: "About me",
-      title: "Who will take care of your project",
+      title: "Who leads your project",
       paragraphs: [
-        "I'm Rodrigo Viana Quirino, consultant and software architect with experience in fintech, government, and large enterprises — environments where mistakes are costly and organization is mandatory.",
-        "I translate technology into results for your business: less daily chaos, more control over customers and sales, and processes your team can actually use.",
+        "I'm Rodrigo Viana Quirino — consultant and software architect with a background in fintech, government, and enterprise environments where downtime and disorganization are not options.",
+        "I turn complex technology into tools your team will use: less operational friction, stronger control over customers and revenue, and processes that hold up in the real world.",
       ],
       role: "IT Consultant · Software Architect",
     },
     audiences: [
       "Retail & commerce",
-      "Service providers",
-      "Clinics & offices",
+      "Professional services",
+      "Clinics & practices",
       "Distributors",
-      "Small & medium businesses",
-      "Growing entrepreneurs",
+      "SMBs",
+      "Scaling founders",
     ],
     faq: {
-      title: "Frequently asked questions",
+      title: "Common questions",
       items: [
         {
-          q: "Do I need to understand technology?",
-          a: "No. My job is to handle the technical side and explain everything clearly so you can focus on the business.",
+          q: "Do I need to be technical?",
+          a: "Not at all. I own the technical side and explain choices in plain terms so you can stay focused on running the business.",
         },
         {
-          q: "How long until I see results?",
-          a: "It depends on scope. Many projects start relieving operational pain within the first weeks, with continuous evolution.",
+          q: "How soon will I see results?",
+          a: "It depends on scope, but many clients feel operational relief within the first few weeks, with steady improvements after that.",
         },
         {
-          q: "Does it work for small businesses?",
-          a: "Yes. Often it's growing businesses that feel the lack of organization most — before it becomes chaos.",
+          q: "Is this only for larger companies?",
+          a: "No — growing businesses often benefit most, while there's still time to get systems right before chaos sets in.",
         },
         {
-          q: "Do you only build CRM?",
-          a: "CRM is a pillar, but I also work on full digitization: processes, integrations, automation, and reporting.",
+          q: "Is it only CRM?",
+          a: "CRM is a major focus, but I also handle broader digitization: processes, integrations, automation, and reporting.",
         },
       ],
     },
     cta: {
       title: "Ready to get your business under control?",
       subtitle:
-        "Schedule a no-commitment call. In 30 minutes we'll see if working together makes sense.",
-      button: "Chat on WhatsApp",
-      emailLabel: "Or send an email",
+        "Book a free 30-minute call. We'll see if we're a good fit — no obligation.",
+      button: "Message on WhatsApp",
+      emailLabel: "Or email me",
     },
     footer: { tagline: "Digitization · CRM · Automation" },
     nav: [
       { id: "desafios", label: "Challenges" },
       { id: "solucoes", label: "Solutions" },
       { id: "crm", label: "CRM" },
-      { id: "como-funciona", label: "How it works" },
+      { id: "como-funciona", label: "Process" },
       { id: "contato", label: "Contact" },
     ],
   },
   portfolio: {
-    availability: "Open to strategic conversations",
+    availability: "Open to the right opportunities",
     title: "Software Architect",
     roleLine: "Technical Lead · Staff Engineer",
     tagline:
-      "I design and evolve distributed platforms where money, compliance, and reliability cannot fail.",
+      "I design and evolve distributed platforms where money, compliance, and uptime are non‑negotiable.",
     subheadline:
-      "Technical leadership in fintech, large-scale architectural transformation, and mission-critical backend engineering.",
-    ctaTalk: "Start a conversation",
+      "Technical leadership across fintech, large-scale modernization, and mission-critical backend systems.",
+    ctaTalk: "Get in touch",
     ctaCv: "Download resume",
     nav: [
       { id: "expertise", label: "Expertise" },
@@ -241,17 +241,17 @@ export const en: Messages = {
       { id: "contato", label: "Contact" },
     ],
     metrics: [
-      { value: "5+", label: "Years in critical systems" },
-      { value: "10+", label: "High-impact platforms" },
-      { value: "24/7", label: "Mission-critical ops" },
-      { value: "Fluent", label: "English — global teams" },
+      { value: "5+", label: "Years on critical systems" },
+      { value: "10+", label: "High-impact platforms shipped" },
+      { value: "24/7", label: "Production-grade operations" },
+      { value: "Fluent", label: "English · global teams" },
     ],
     pillarsSection: {
       label: "Expertise",
-      title: "Architecture, engineering, and leadership — at the same level.",
+      title: "Architecture, engineering, and leadership — in equal measure.",
       about: [
-        "Computer Science graduate (PUC-GO) with a track record in high-stakes environments: fintech, government, and global enterprise.",
-        "For CTOs, founders, and engineering teams: architectural vision, hands-on execution, and squad maturity.",
+        "Computer Science graduate (PUC-GO) with experience in high-stakes environments: fintech, government, and global enterprise.",
+        "For CTOs, founders, and engineering leaders: architectural direction, hands-on delivery, and stronger teams.",
       ],
     },
     pillars: [
@@ -259,7 +259,7 @@ export const en: Messages = {
         title: "Architecture",
         titleEn: "Architecture",
         description:
-          "Microservices, distributed systems, data modeling, and cloud with scalability and security in mind.",
+          "Microservices, distributed systems, data modeling, and cloud — built for scale, security, and change.",
         highlights: [
           "System design & ADRs",
           "Integrations & gateways",
@@ -270,7 +270,7 @@ export const en: Messages = {
         title: "Engineering",
         titleEn: "Engineering",
         description:
-          "Production Java/Spring backend, APIs, messaging, and patterns for throughput and continuous evolution.",
+          "Production-grade Java/Spring backends, APIs, messaging, and patterns tuned for throughput and long-term evolution.",
         highlights: [
           "Java · Spring ecosystem",
           "REST APIs · OAuth2",
@@ -281,7 +281,7 @@ export const en: Messages = {
         title: "Leadership",
         titleEn: "Leadership",
         description:
-          "Technical direction, mentorship, code review, and engineering–business alignment.",
+          "Technical direction, mentorship, code review, and alignment between engineering outcomes and business goals.",
         highlights: [
           "Tech lead & mentorship",
           "Incident response",
@@ -291,9 +291,9 @@ export const en: Messages = {
     ],
     experienceSection: {
       label: "Experience",
-      title: "Track record in critical environments.",
+      title: "Built where failure isn't an option.",
       description:
-        "Fintech, government, and global enterprise — systems that cannot stop.",
+        "Fintech, government, and global enterprise — systems that have to stay up.",
     },
     experiences: [
       {
@@ -302,9 +302,9 @@ export const en: Messages = {
         period: "2025 — present",
         type: "Fintech",
         summary:
-          "Architecture and evolution of the financial ecosystem — microservices, payments, cloud, and critical operations.",
+          "Owning architecture and evolution of the payments ecosystem — microservices, cloud, security, and always-on operations.",
         highlights: [
-          "Microservices & payments architecture",
+          "Payments & microservices architecture",
           "Cloud, security & observability",
           "Technical leadership & ADRs",
           "24/7 incident response",
@@ -316,11 +316,11 @@ export const en: Messages = {
         period: "2022 — 2025",
         type: "Government",
         summary:
-          "Digital transformation of tax and enforcement systems at state scale.",
+          "Led digital transformation of state-scale tax and enforcement systems.",
         highlights: [
-          "PAT-e, SISIMP, NFG, CCE — tax ecosystem",
-          "Automation & critical system integration",
-          "High regulatory volume operations",
+          "PAT-e, SISIMP, NFG, CCE — tax platform suite",
+          "Automation & integration across critical systems",
+          "High-volume regulatory operations",
         ],
       },
       {
@@ -329,10 +329,10 @@ export const en: Messages = {
         period: "2021 — 2022",
         type: "Enterprise",
         summary:
-          "SAP ↔ Oracle integration, microservices, and supply chain data pipelines.",
+          "SAP–Oracle integration, microservices, and supply-chain data pipelines at global scale.",
         highlights: [
-          "Microservices on legacy systems",
-          "Data load automation",
+          "Microservices on legacy estates",
+          "Automated data ingestion",
           "Global supply chain",
         ],
       },
@@ -342,13 +342,13 @@ export const en: Messages = {
         period: "2020",
         type: "Academia",
         summary:
-          "Algorithms, data structures, and programming competitions.",
+          "Algorithms, data structures, and competitive programming.",
         highlights: ["C/C++ mentorship", "Programming competitions"],
       },
     ],
     workSection: {
-      label: "Selected Work",
-      title: "Projects that define the profile.",
+      label: "Selected work",
+      title: "Projects that define the work.",
     },
     projects: [
       {
@@ -356,7 +356,7 @@ export const en: Messages = {
         titlePt: "Plataforma Financeira",
         context: "Suit Pay · Fintech",
         description:
-          "Payments ecosystem: microservices, gateways, AWS, and strict SLAs.",
+          "End-to-end payments platform: microservices, gateways, AWS, and strict production SLAs.",
         tags: ["Architecture", "Payments", "AWS", "Java"],
         featured: true,
       },
@@ -365,7 +365,7 @@ export const en: Messages = {
         titlePt: "Sistemas Tributários",
         context: "Government · Scale",
         description:
-          "Modernization of critical systems impacting millions of taxpayers.",
+          "Modernization of systems serving millions of taxpayers — reliability and compliance built in.",
         tags: ["Spring Boot", "Integration", "Critical Systems"],
         featured: true,
       },
@@ -374,16 +374,16 @@ export const en: Messages = {
         titlePt: "Integração Corporativa",
         context: "Coca-Cola · Global",
         description:
-          "Pipelines connecting SAP and Oracle for supply chain and logistics.",
+          "Data pipelines bridging SAP and Oracle for supply chain and logistics.",
         tags: ["SAP", "Oracle", "Microservices"],
         featured: false,
       },
     ],
     stackSection: {
       label: "Stack",
-      title: "Tools & domains.",
+      title: "Tools & domains",
       description:
-        "Stack focused on distributed systems, Java backend, and cloud.",
+        "Focused on distributed systems, Java backends, and cloud-native delivery.",
       categories: [
         { key: "architecture", label: "Architecture" },
         { key: "backend", label: "Backend" },
@@ -428,10 +428,10 @@ export const en: Messages = {
     },
     contact: {
       label: "Let's talk",
-      title: "Ready to level up your product engineering?",
+      title: "Looking to raise the bar on product engineering?",
       subtitle:
-        "For CTOs, founders, and engineering leaders — architecture, scale, and technical leadership.",
-      cta: "Start a conversation",
+        "For CTOs, founders, and engineering leaders — architecture, scale, and hands-on technical leadership.",
+      cta: "Get in touch",
     },
     footer: {
       line: "Software Architect · Technical Lead",
