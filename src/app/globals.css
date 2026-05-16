@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: #fafafa;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f4f4f5;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-muted: #52525b;
+  --color-muted-light: #71717a;
+  --color-foreground: #18181b;
+  --color-accent-from: #7c3aed;
+  --color-accent-mid: #2563eb;
+  --color-accent-to: #059669;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.dark {
+  --color-background: #030303;
+  --color-surface: #0a0a0a;
+  --color-surface-elevated: #111111;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-muted: #71717a;
+  --color-muted-light: #a1a1aa;
+  --color-foreground: #fafafa;
+  --color-accent-from: #a78bfa;
+  --color-accent-mid: #60a5fa;
+  --color-accent-to: #34d399;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(5, 150, 105, 0.25);
+  color: var(--color-foreground);
+}
+
+.dark ::selection {
+  background: rgba(167, 139, 250, 0.35);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
+}
+
+.dark .grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #18181b 0%,
+    #52525b 45%,
+    #18181b 65%,
+    #7c3aed 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(
+    135deg,
+    #fafafa 0%,
+    #a1a1aa 40%,
+    #fafafa 60%,
+    #c4b5fd 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.gradient-text-accent {
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-from),
+    var(--color-accent-mid),
+    var(--color-accent-to)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-shine::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(0, 0, 0, 0.02) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.dark .card-shine::before {
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.03) 50%,
+    transparent 60%
+  );
+}
+
+.card-shine:hover::before {
+  transform: translateX(100%);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s ease forwards;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fade-up 0.7s ease 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.7s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fade-up 0.7s ease 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay-1,
+  .animate-fade-up-delay-2,
+  .animate-fade-up-delay-3,
+  .animate-marquee {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

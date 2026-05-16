@@ -1,0 +1,16 @@
+.consultoria-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgb(0 0 0 / 0.05) 1px,
+    transparent 0
+  );
+  background-size: 32px 32px;
+}
+
+.dark .consultoria-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgb(255 255 255 / 0.04) 1px,
+    transparent 0
+  );
+}
